@@ -5,10 +5,10 @@ import { BannerComponent } from './banner/banner.component';
 import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
-  { path: 'banner', component: BannerComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'services', component: ServicesComponent },
-  { path: '', redirectTo: '/banner', pathMatch: 'full' },
+  // { path: 'banner', component: BannerComponent },
+  // { path: 'about', component: AboutComponent },
+  // { path: 'services', component: ServicesComponent },
+  // { path: '', redirectTo: '/banner', pathMatch: 'full' },
 ];
 
 @NgModule({
