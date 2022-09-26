@@ -1,9 +1,10 @@
 <header [ngClass]="{'fixed':this.headerVerification >= 60}">
   <nav>
     <ul>
-      <li><a (click)="scrollTo(banner)" [ngClass]="{'active':this.currentPage == 1}">Banner</a></li>
-      <li><a (click)="scrollTo(about)" [ngClass]="{'active':this.currentPage == 2}">About</a></li>
-      <li><a (click)="scrollTo(services)" [ngClass]="{'active':this.currentPage == 3}">Services</a></li>
+      <li><a (click)="scrollTo(banner)" [ngClass]="{'active':this.currentPage == 1}" #firstItemInMenu>Banner</a></li>
+      <li><a (click)="scrollTo(about)" [ngClass]="{'active':this.currentPage == 2}" #secondItemInMenu>About</a></li>
+      <li><a (click)="scrollTo(services)" [ngClass]="{'active':this.currentPage == 3}" #thirdItemInMenu>Servicesndnk</a></li>
+      <span class="underline" #underline [style.left.px]="this.underlineLeft"  [style.width.px]="this.underlineWidth"></span>
     </ul>
   </nav>
 </header>
